@@ -1,0 +1,54 @@
+<%- include('./partials/header')-%>
+<%- include('./partials/navbar')-%>
+
+<div class="container-fluid ctnr">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>Choisi parmi ces <%=totalTrainer%> dresseurs :</h1>
+            <ul>
+                <% trainerList.forEach(function(item) {%>
+                    <li class="trainerList">
+                        <h2><%=item.name%></h2>
+                        <img src="<%=item.head%>" alt="headpicture"><br>
+                        <a href="/trainer/<%=item.id%>"><button type="button" class="btn btn-trainer">Voir en détail</button></a>
+                    </li>
+                    <%}); 
+                %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid ctnr">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>Choisi parmi ces <%=totalPokemon%> pokemons : </h1>
+            <ul>
+                <% pokemonList.forEach(function(item, index) {%>
+                    <li class="pokemonList">
+                        <h2><%=item%></h2>
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<%=index + 1%>.png" alt=""><br>
+                        <a href="/pokemon/<%=index + 1%>"><button type="button" class="btn btn-pokemon">Voir en détail</button></a>
+                        <p class="btn-detailPokemon"></p>
+                    </li>
+                    <%}); 
+                %>   
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer')-%>

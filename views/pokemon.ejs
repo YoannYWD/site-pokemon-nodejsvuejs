@@ -1,0 +1,46 @@
+<%- include('./partials/header')-%>
+<%- include('./partials/navbar')-%>
+
+
+<div class="container-fluid ctnr">
+    <div class="row text-center">
+        <div class="col-12 resultPokemon">
+            <% if (resultPokemon) { %>
+                <h1><%=resultPokemon%></h1>
+                <img src="<%=imgPokemon%>" alt="" class="imgPokemon"><br>
+                <a href="/"><button type="button" class="btn btn-dark">Revenir à la page d'accueil</button></a>
+
+            <%} else {%>
+                <p>Pas de pokémon</p>
+                <a href="/"><button type="button" class="btn btn-dark">Revenir à la page d'accueil</button></a>
+            <%}%>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer')-%>

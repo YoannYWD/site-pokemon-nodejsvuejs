@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url(./Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url(./Pokemon\ Solid.ttf);
+}
+
+.ctnr {
+    padding: 30px;
+    background-color: #EF4036;
+}
+
+h1 {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.ctnr h2 {
+    font-family: 'Pokemon Hollow', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.trainerList {
+    margin: 20px 0 70px 0;
+}
+
+.trainerList img {
+    border-radius: 50%;
+    height: 100px;
+}
+
+.pokemonList {
+    margin: 20px 0 70px 0;
+}
+
+.resultPokemon img {
+    margin-bottom: 50px;
+}
+
+button {
+    font-family: 'Love Ya Like A Sister', sans-serif;
+}
+.btn-trainer{
+    background-color: #A19E9E;
+    border: 1px solid #FFFFFF;
+    margin: 10px 0;
+}
+.btn-pokemon {
+    background-color: #D7D7D7;
+    border: 1px solid #FFFFFF;
+    margin: 10px 0;
+}
+
+.p-desc {
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    margin: 20px 0 50px 0;
+}
+
+footer {
+    padding: 50px;
+}
+footer p {
+    font-size: 2em;
+}

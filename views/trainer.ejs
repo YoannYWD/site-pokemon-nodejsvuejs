@@ -1,0 +1,45 @@
+<%- include('./partials/header')-%>
+<%- include('./partials/navbar')-%>
+
+<div class="container-fluid ctnr">
+    <div class="row text-center">
+        <div class="col-12">
+            <% if (result) { %>
+                <h1><%=result.name%></h1> 
+                <img src=".<%=result.image%>" alt="trainerpicture">   
+                <p class="p-desc"><%=result.desc%></p>
+                <a href="/"><button type="button" class="btn btn-dark">Revenir à la page d'accueil</button></a>
+            <%} else {%>
+                <p>Pas de dresseur</p>
+            <%}%>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer')-%>
